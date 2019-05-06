@@ -135,6 +135,9 @@ export default {
   padding-bottom: 50%;
   margin-top: -0.06rem;
 }
+.icons{
+  margin-top 0.2rem
+}
 
 .icon {
   position: relative;
