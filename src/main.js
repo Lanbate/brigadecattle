@@ -5,7 +5,7 @@ import store from "./store";
 import "./assets/styles/reset.css";
 import "./assets/styles/border.css";
 import "./assets/styles/iconfont.css";
-import VueAwesomeSwiper from "vue-awesome-swiper";
+import VueAwesomeSwiper from "vue-awesome-swiper"; //轮播插件
 import "swiper/dist/css/swiper.css";
 import fastClick from "fastclick";
 
