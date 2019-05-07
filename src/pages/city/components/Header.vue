@@ -1,6 +1,7 @@
 <template>
   <div class="header">
     城市选择
+    <!-- 点击 -->
     <router-link to="/">
       <div class="iconfont header-back">&#xe624;</div>
     </router-link>
