@@ -1,3 +1,4 @@
+//网页头部
 <template>
   <div class="header">
     <div class="header-left">
@@ -7,13 +8,16 @@
       <span class="iconfont">&#xe632;</span>
       输入城市/景点/游玩主题
     </div>
-    <div class="iconfont arrow-icon">城市&#xe62d;</div>
+    <div class="iconfont arrow-icon">{{ this.city }}&#xe62d;</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HomeHeader"
+  name: "HomeHeader",
+  props: {
+    city: String
+  }
 };
 </script>
 
