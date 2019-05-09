@@ -1,3 +1,4 @@
+//城市首字母
 <template>
   <div class="header">
     城市选择
@@ -18,6 +19,7 @@ export default {
 @import '~@/assets/styles/varibles.styl';
     .header{
         position relative
+        top:1px
         overflow :hidden
         height :$headeheight
         line-height :$headeheight
