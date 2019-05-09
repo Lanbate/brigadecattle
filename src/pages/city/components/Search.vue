@@ -15,6 +15,7 @@
           class="search-item border-bottom"
           v-for="item of list"
           :key="item.id"
+          @click="handlecityCilick(item.name)"
         >
           {{ item.name }}
         </li>
@@ -28,6 +29,7 @@
 
 <script>
 import Bscroll from "better-scroll";
+import { mapMutations } from "vuex";
 // import { clearTimeout, setTimeout } from 'timers';
 export default {
   name: "CitySearch",
@@ -74,41 +76,57 @@ export default {
   },
   mounted() {
     this.scroll = new Bscroll(this.$refs.searom);
+  },
+  methods: {
+    // handlecityCilick(city){
+    //   this.$store.dispatch('changeCity',city)
+    //   this.$router.push('/')
+    // }
+    handlecityCilick(city) {
+      // this.$store.dispatch('changeCity',city)
+      this.changeCity(city);
+      this.$router.push("/");
+    },
+    ...mapMutations(["changeCity"])
   }
 };
 </script>
 
 <style lang="stylus" scoped>
 @import '~@/assets/styles/varibles.styl';
-    .search{
-        height 0.72rem
-        padding 0.1rem
-        background :$bgColor
-    }
-    .search-iput{
-        box-sizing :border-box
-        height 0.62rem
-        width 100%
-        line-height :.62rem
-        text-align :center
-        border-radius :0.08rem
-        color :#666
-        padding :0 0.1rem
-        }
-      .search-content{
-        z-index:1
-        overflow :hidden
-        position :absolute
-        top:1.68rem
-        left :0
-        right :0
-        bottom :0
-        background #eee
-      }
-      .search-item{
-        line-height :.62rem
-        padding-left :.2rem
-        background :#fff
-        color :#666
-      }
+
+.search {
+  height: 0.72rem;
+  padding: 0.1rem;
+  background: $bgColor;
+}
+
+.search-iput {
+  box-sizing: border-box;
+  height: 0.62rem;
+  width: 100%;
+  line-height: 0.62rem;
+  text-align: center;
+  border-radius: 0.08rem;
+  color: #666;
+  padding: 0 0.1rem;
+}
+
+.search-content {
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  top: 1.68rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #eee;
+}
+
+.search-item {
+  line-height: 0.62rem;
+  padding-left: 0.2rem;
+  background: #fff;
+  color: #666;
+}
 </style>
