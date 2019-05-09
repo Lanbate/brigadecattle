@@ -55,6 +55,7 @@ export default {
         if (this.timer) {
           clearTimeout(this.timer);
         }
+        //如果你正在做这个操作，延迟16毫秒，如果滑动太快就会清空然后重新运行
         this.timer = setTimeout(() => {
           const touchY = e.touches[0].clientY - 89;
           const index = Math.floor(touchY - this.startY) / 20;
