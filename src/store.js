@@ -33,6 +33,7 @@ export default new Vuex.Store({
       state.city = city;
       try {
         localStorage.city = city;
+        defaultCity = localStorage.city;
       } catch (e) {
         // eslint-disable-next-line no-console
         console.log(e);
