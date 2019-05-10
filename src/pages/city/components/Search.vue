@@ -58,7 +58,7 @@ export default {
         return;
       }
       this.timer = setTimeout(() => {
-        const result = [];
+        let result = [];
         for (let i in this.cities) {
           this.cities[i].forEach(value => {
             if (

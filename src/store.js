@@ -5,8 +5,8 @@ Vue.use(Vuex);
 
 let defaultCity = "上海";
 try {
-  if (localStorage.city) {
-    defaultCity = localStorage.city;
+  if (localStorage.citys) {
+    defaultCity = localStorage.citys;
   }
 } catch (e) {
   // eslint-disable-next-line no-console
@@ -32,8 +32,8 @@ export default new Vuex.Store({
     changeCity(state, city) {
       state.city = city;
       try {
-        localStorage.city = city;
-        defaultCity = localStorage.city;
+        localStorage.citys = city;
+        defaultCity = localStorage.citys;
       } catch (e) {
         // eslint-disable-next-line no-console
         console.log(e);
