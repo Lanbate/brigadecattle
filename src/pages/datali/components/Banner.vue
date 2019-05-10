@@ -8,7 +8,7 @@
       <div class="banner-info">
         <div class="banner-tittle">故宫(AAAAA景区)</div>
         <div class="banner-number">
-          <span class="iconfont banner-icon">&#xe602;</span>4
+          <span class="iconfont banner-icon">&#xe602;</span>2
         </div>
       </div>
     </div>
