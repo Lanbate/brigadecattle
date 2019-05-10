@@ -6,7 +6,7 @@
       :key="item"
       :ref="item"
       @click="handeletterClick"
-      @touchstart="touchstartStart"
+      @touchstart.prevent="touchstartStart"
       @touchmove="touchstartMove"
       @touchend="touchstartEnd"
     >
