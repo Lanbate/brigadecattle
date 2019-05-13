@@ -7,9 +7,12 @@ import "./assets/styles/border.css";
 import "./assets/styles/iconfont.css";
 import VueAwesomeSwiper from "vue-awesome-swiper"; //轮播插件
 import "babel-polyfill";
+import Es6Promise from "es6-promise";
 import "swiper/dist/css/swiper.css";
 import fastClick from "fastclick";
 
+require("es6-promise").polyfill();
+Es6Promise.polyfill();
 Vue.config.productionTip = false;
 fastClick.attach(document.body);
 Vue.use(VueAwesomeSwiper);
