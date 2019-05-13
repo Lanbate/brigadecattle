@@ -20,6 +20,8 @@ import { mapState } from "vuex";
 export default {
   name: "Home",
   components: {
+    //异步组件
+    // HomeHeader:()=>import("./components/Header")
     HomeHeader: HomeHeader,
     HomeSwiper: HomeSwiper,
     HomeIcons: HomeIcons,

@@ -19,7 +19,6 @@ export default {
 @import '~@/assets/styles/varibles.styl';
     .header{
         position relative
-        top:1px
         overflow :hidden
         height :$headeheight
         line-height :$headeheight
