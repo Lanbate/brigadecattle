@@ -1,23 +1,23 @@
-个人学习开发出来的项目
-以下是使用依赖插件 
-```
-Vue-Awesome-Swiper 用 v2.6.7 版本。
-这是轮播图插件 具体的使用访问https://github.com/surmon-china/vue-awesome-swiper#readme
-```
-```
-better-scroll 滚动插件,模仿原生的滚动方式
-具体https://github.com/ustbhuangyi/better-scroll/blob/master/README_zh-CN.md
-```
-```
-fastclick清除移动端物理点击300毫秒问题 
-具体https://github.com/ftlabs/fastclick
-```
-```
-vuex 同一状态管理
-```
-```
-axios 异步刷新 https://github.com/axios/axios
-```
-reset.css初始化css
-border.css解决移动端1px边距问题
-临时接口生成http://myjson.com/api
+### 基于Vue.js开发出来的旅游webapp项目
+###  **demo** 
+
+-  **首页** 
+- ![首页](https://images.gitee.com/uploads/images/2019/0513/114345_8d3eaf64_1138914.png "TIM截图20190513114255.png")
+-  **选择城市** 
+- ![选择城市](https://images.gitee.com/uploads/images/2019/0513/114444_fb2c61b3_1138914.png "TIM截图20190513114308.png")
+
+
+### 如何使用？
+ **
+#安装vuecli脚手架** 
+`npm install -g @vue/cli`
+
+#安装依赖
+`npm install`
+
+# 项目启动
+`npm run serve`
+
+
+# 打包
+`npm run build`
