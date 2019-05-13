@@ -1,1 +1,1 @@
-使用vuecli3开发出来的旅游网站webapp项目 以下是使用依赖插件
+使用vuecli3开发出来的旅游网站webapp项目
