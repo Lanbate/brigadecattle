@@ -21,3 +21,7 @@
 
 # 打包
 `npm run build`
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/detali-list
