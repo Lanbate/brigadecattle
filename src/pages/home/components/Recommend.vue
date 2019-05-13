@@ -77,7 +77,7 @@ export default {
 .item-desc {
   line-height: 0.4rem;
   color: #ccc;
-  font-size: 0.1rem;
+  font-size: 0.3rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
