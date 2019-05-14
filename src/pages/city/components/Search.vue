@@ -85,6 +85,7 @@ export default {
     handlecityCilick(city) {
       // this.$store.dispatch('changeCity',city)
       this.changeCity(city);
+      this.keyword = "";
       this.$router.push("/");
     },
     ...mapMutations(["changeCity"])

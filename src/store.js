@@ -3,7 +3,7 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
-let defaultCity = "上海";
+let defaultCity = "北京";
 try {
   if (localStorage.citys) {
     defaultCity = localStorage.citys;
