@@ -75,7 +75,7 @@ export default {
     }
   },
   mounted() {
-    this.scroll = new Bscroll(this.$refs.searom);
+    this.scroll = new Bscroll(this.$refs.searom, { click: true });
   },
   methods: {
     // handlecityCilick(city){

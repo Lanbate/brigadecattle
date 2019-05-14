@@ -40,9 +40,11 @@ export default {
     }
   },
   activated() {
+    // console.log("11")
     window.addEventListener("scroll", this.handleScroll);
   },
   deactivated() {
+    // console.log("22")
     window.removeEventListener("scroll", this.handleScroll);
   }
 };
