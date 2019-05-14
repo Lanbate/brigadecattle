@@ -1,5 +1,6 @@
 <template>
   <div>
+    <loading v-if="isloading"></loading>
     <home-header></home-header>
     <home-swiper :list="swiperList"></home-swiper>
     <home-icons :list="inconList"></home-icons>
@@ -16,6 +17,7 @@ import HomeRecommend from "./components/Recommend";
 import HomeWeekend from "./components/Weekend";
 import axios from "axios";
 import { mapState } from "vuex";
+import Loading from "../common/gallary/load";
 
 export default {
   name: "Home",
@@ -26,7 +28,8 @@ export default {
     HomeSwiper: HomeSwiper,
     HomeIcons: HomeIcons,
     HomeRecommend: HomeRecommend,
-    HomeWeekend: HomeWeekend
+    HomeWeekend: HomeWeekend,
+    Loading: Loading
   },
   data() {
     return {
@@ -34,7 +37,8 @@ export default {
       swiperList: [],
       inconList: [],
       recommendList: [],
-      WeekendList: []
+      WeekendList: [],
+      isloading: true
     };
   },
   methods: {
@@ -53,6 +57,7 @@ export default {
         this.inconList = data.inconList;
         this.recommendList = data.recommendList;
         this.WeekendList = data.WeekendList;
+        this.isloading = false;
       }
     }
   },

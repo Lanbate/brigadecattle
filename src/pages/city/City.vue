@@ -1,5 +1,6 @@
 <template>
   <div>
+    <loading v-if="isloading"></loading>
     <city-header></city-header>
     <city-search :cities="cities"></city-search>
     <city-list :letter="letter" :cities="cities" :hot="hotCities"></city-list>
@@ -13,6 +14,7 @@ import CityHeader from "./components/Header";
 import CitySearch from "./components/Search";
 import CityList from "./components/List";
 import CityAlphabet from "./components/Alphabet";
+import Loading from "../common/gallary/load";
 
 export default {
   name: "City",
@@ -20,13 +22,15 @@ export default {
     CityHeader,
     CitySearch,
     CityList,
-    CityAlphabet
+    CityAlphabet,
+    Loading
   },
   data() {
     return {
       cities: {},
       hotCities: [],
-      letter: ""
+      letter: "",
+      isloading: true
     };
   },
   methods: {
@@ -41,6 +45,7 @@ export default {
         const data = res.data;
         this.cities = data.cities;
         this.hotCities = data.hotCities;
+        this.isloading = false;
       }
     },
     handelechangge(letter) {
@@ -53,4 +58,13 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+</style>
