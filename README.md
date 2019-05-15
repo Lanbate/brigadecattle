@@ -1,5 +1,6 @@
-### 基于Vue.js开发出来的旅游webapp项目
-###  **demo** 
+###基于Vue.js开发出来的旅游webapp项目 
+仅供学习！
+###    **演示** 
 
 -  **首页** 
 - ![首页](https://images.gitee.com/uploads/images/2019/0513/114345_8d3eaf64_1138914.png "TIM截图20190513114255.png")
