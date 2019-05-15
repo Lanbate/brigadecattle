@@ -1,4 +1,3 @@
-//城市列表
 <template>
   <div class="list" ref="wrapper">
     <div>
@@ -58,7 +57,6 @@ export default {
   },
   methods: {
     handlecityCilick(city) {
-      // this.$store.dispatch('changeCity',city)
       this.changeCity(city);
       this.$router.push("/");
     },

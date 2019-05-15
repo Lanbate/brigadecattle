@@ -1,0 +1,47 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "故宫(AAAAA景区)",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_640x360_b00af8c3.jpg",
+    "gallaryImgs": ["http://img1.qunarzz.com/sight/p55/201211/04/fbcab3e5d6479ce893835fbb.jpg_r_800x800_6360f514.jpg", "http://img1.qunarzz.com/wugc/p123/201211/19/a2045d091f02b25493835fbb.png_r_800x800_c59f0eba.png"],
+    "categoryList": [{
+        "title": "成人票",
+        "children": [{
+          "title": "成人三馆联票",
+          "children": [{
+            "title": "成人三馆联票 - 某一连锁店销售"
+          }]
+        },{
+          "title": "成人五馆联票"
+        }]
+      }, {
+        "title": "学生票"
+      }, {
+        "title": "儿童票"
+      }, {
+        "title": "特惠票"
+      }],
+      "Recommendtous":[{
+        "recommtou":"【当日票】故宫成人票凭身份证入园（随买随用，快速入园）",
+        "recommsm":"16:00前随买随用",
+        "recommspcna":"自营",
+        "recommspcnb":"无需换票",
+        "recommspcnc":"条件退",
+        "recommcha":"查看"
+      },{
+        "recommtou":"【下午场】故宫成人票凭身份证快速入园（旺季）",
+        "recommsm":"23:59前可订明日",
+        "recommspcna":"自营",
+        "recommspcnb":"无需换票",
+        "recommspcnc":"条件退",
+        "recommcha":"查看"
+      },{
+        "recommtou":"北京故宫大门票+珍宝馆+资深导游讲解（配无线耳麦）*成人票",
+        "recommsm":"可订明日",
+        "recommspcna":"自营",
+        "recommspcnb":"无需换票",
+        "recommspcnc":"条件退",
+        "recommcha":"查看"
+      }]
+  }
+}

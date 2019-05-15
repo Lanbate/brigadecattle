@@ -1,4 +1,3 @@
-//多选项
 <template>
   <div class="icons">
     <swiper :options="swiperOption">
@@ -15,8 +14,6 @@
 </template>
 
 <script>
-// import { parse } from "path";
-// import { constants } from "crypto";
 export default {
   name: "HomeIcons",
   props: {

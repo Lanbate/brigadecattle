@@ -30,7 +30,6 @@
 <script>
 import Bscroll from "better-scroll";
 import { mapMutations } from "vuex";
-// import { clearTimeout, setTimeout } from 'timers';
 export default {
   name: "CitySearch",
   props: {
@@ -65,7 +64,6 @@ export default {
               value.spell.indexOf(this.keyword) > -1 ||
               value.name.indexOf(this.keyword) > -1
             ) {
-              // console.log(value);
               result.push(value);
             }
           });
@@ -78,12 +76,7 @@ export default {
     this.scroll = new Bscroll(this.$refs.searom, { click: true });
   },
   methods: {
-    // handlecityCilick(city){
-    //   this.$store.dispatch('changeCity',city)
-    //   this.$router.push('/')
-    // }
     handlecityCilick(city) {
-      // this.$store.dispatch('changeCity',city)
       this.changeCity(city);
       this.keyword = "";
       this.$router.push("/");

@@ -42,26 +42,23 @@ export default {
   },
   methods: {
     handeletterClick(e) {
-      // console.log(e.target)
       this.$emit("change", e.target.innerText);
     },
     touchstartStart() {
       this.touchstatus = true;
     },
     touchstartMove(e) {
-      //函数节流方式，提高网页性能
       if (this.touchstatus) {
         if (this.timer) {
           clearTimeout(this.timer);
         }
-        //如果你正在做这个操作，延迟16毫秒，如果滑动太快就会清空然后重新运行
         this.timer = setTimeout(() => {
           const touchY = e.touches[0].clientY - 89;
           const index = Math.floor(touchY - this.startY) / 20;
           if (index >= 0 && index < this.letters.length) {
             this.$emit("change", this.letters[index]);
           }
-        }, 16);
+        }, 10);
       }
     },
     touchstartEnd() {
@@ -83,6 +80,7 @@ export default {
   right: 0;
   bottom: 0;
   width: 0.4rem;
+  overflow: hidden;
 }
 
 .item {

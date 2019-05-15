@@ -25,26 +25,22 @@ export default {
   methods: {
     handleScroll() {
       var top = document.documentElement.scrollTop;
-      //   console.log(top)
       if (top > 60) {
         let opactys = top / 160;
         opactys = opactys > 1 ? 1 : opactys;
         this.OpacityStyle = {
           opacity: opactys
         };
-        //   console.log(this.opacityStyle.opacty)
         this.showAbs = false;
       } else {
         this.showAbs = true;
       }
     }
   },
-  activated() {
-    // console.log("11")
+  created() {
     window.addEventListener("scroll", this.handleScroll);
   },
-  deactivated() {
-    // console.log("22")
+  destroyed() {
     window.removeEventListener("scroll", this.handleScroll);
   }
 };

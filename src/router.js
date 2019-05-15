@@ -27,5 +27,9 @@ export default new Router({
       // component: Datali
       component: () => import("./pages/datali/Datali.vue")
     }
-  ]
+  ],
+  // eslint-disable-next-line no-unused-vars
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 };
+  }
 });

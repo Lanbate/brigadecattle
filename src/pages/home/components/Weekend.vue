@@ -1,4 +1,3 @@
-//周末去哪儿
 <template>
   <div>
     <div class="recommednt-title">周末去哪儿</div>

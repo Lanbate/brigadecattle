@@ -1,41 +1,44 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-      <img
-        class="banner-img"
-        src="http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_640x360_b00af8c3.jpg"
-      />
+      <img class="banner-img" :src="bannerImg" />
       <div class="banner-info">
-        <div class="banner-tittle">故宫(AAAAA景区)</div>
+        <div class="banner-tittle">{{ sightName }}</div>
         <div class="banner-number">
-          <span class="iconfont banner-icon">&#xe602;</span>2
+          <span class="iconfont banner-icon">&#xe602;</span
+          >{{ this.gallaryImgs.length }}
         </div>
       </div>
     </div>
-    <common-gallary
-      :imgs="imgs"
-      v-show="showGallary"
-      @close="handleBannerclose"
-    ></common-gallary>
+    <common-fade>
+      <common-gallary
+        :imgs="gallaryImgs"
+        v-show="showGallary"
+        @close="handleBannerclose"
+      ></common-gallary>
+    </common-fade>
   </div>
 </template>
 
 <script>
 import CommonGallary from "../../common/gallary/Gallary";
+import CommonFade from "../../common/gallary/fade";
 
 export default {
   name: "DetaliBanner",
+  props: {
+    sightName: String,
+    bannerImg: String,
+    gallaryImgs: Array
+  },
   data() {
     return {
-      showGallary: false,
-      imgs: [
-        "http://img1.qunarzz.com/sight/p55/201211/04/fbcab3e5d6479ce893835fbb.jpg_r_800x800_6360f514.jpg",
-        "http://img1.qunarzz.com/wugc/p123/201211/19/a2045d091f02b25493835fbb.png_r_800x800_c59f0eba.png"
-      ]
+      showGallary: false
     };
   },
   components: {
-    CommonGallary
+    CommonGallary,
+    CommonFade
   },
   methods: {
     handleBannerClick() {

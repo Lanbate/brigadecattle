@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "Loading" // 定义的组件名称 使用时写法：loading
+  name: "Loading"
 };
 </script>
 
@@ -21,9 +21,10 @@ export default {
   z-index: 1000;
 }
 .loads{
+    display:block
     position: absolute;
-    left:43%;
-    top: 50%;
+    left:42%;
+    top: 49%;
     font-weight:bold
 }
 </style>

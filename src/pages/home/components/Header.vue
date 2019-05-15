@@ -1,4 +1,3 @@
-//网页头部
 <template>
   <div class="header">
     <div class="header-left">
@@ -43,7 +42,7 @@ export default {
     margin-left :.2rem
     padding-left :.2rem
     background:#fff
-    border-radius :.1rem //5像素
+    border-radius :.1rem
     color :#ccc
 .header-right
     width :1.24rem
